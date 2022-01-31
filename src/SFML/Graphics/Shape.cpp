@@ -48,6 +48,13 @@ namespace
     {
         return p1.x * p2.x + p1.y * p2.y;
     }
+    
+    float magnitude(const sf::Vector2f& vector1)
+    {
+        float ret = 0;
+        ret = (vector1.x * vector1.x) + (vector1.y * vector1.y);
+        return sqrt(ret);
+    }
 }
 
 
